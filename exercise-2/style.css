@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Excelorate';
+  src: url('exercise-2/font/Excelorate-Font.otf') format('otf');
+}
+
+body{
+  margin: 0;
+  padding: 20px;
+  background-image: url('images/grid.jpeg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Excelorate", sans-serif;
+  text-align: center;
+  color:#15479e;
+}
+  
+h1{
+  margin-bottom:3%;
+  font-size:100px;
+  color: white;
+  text-shadow: -5px -5px 0 #15479e,  
+                5px -5px 0 #15479e,
+               -5px 5px 0 #15479e,
+                5px 5px 0 #15479e;
+  letter-spacing:1px;
+}
+
+h3{
+  font-size:50px;
+  color: white;
+  text-shadow: -3px -3px 0 #15479e,  
+                3px -3px 0 #15479e,
+               -3px 3px 0 #15479e,
+                3px 3px 0 #15479e;
+  letter-spacing:2px; 
+}
+
+li{
+  font-size:25px;
+  line-height:30px;
+  margin-bottom: 10px;
+}
+
+ol{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+img{
+  max-height: 500px;
+  
+}
