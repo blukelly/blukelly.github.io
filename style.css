@@ -1,12 +1,25 @@
-html {
-    background: #b6d7f0;
+@import url('https://fonts.googleapis.com/css2?family=Micro+5&display=swap');
+
+body{
+  background-image: url('images/waves.gif');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Micro 5", sans-serif;
+  text-align:center;
 }
 
+
 h1 {
-    font-size: 100px;
-    
+    font-size: 125px;
+    color:#f1efd3;
 }
 
 h2 {
     font-size: 50px;
+    color:#ccd4ae;
+}
+
+a{
+    font-size:25px;
 }
