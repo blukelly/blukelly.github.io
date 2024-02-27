@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+
+@media all and (min-width: 200px) {
+
+    * {
+      margin:25px;
+      overflow: hidden;
+      background: #f0f0f0; /* Set a background color */
+      cursor: none; /* Hide the default cursor */
+    }
+
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+.p1{
+    right:10px;
+    font-size:50px;
+    text-decoration: none;
+    position: fixed;
+    top: 5px;
+    padding: 10px;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-family: "Barriecito", system-ui;
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.p2{
+    right:10px;
+    font-size:50px;
+    text-decoration: none;
+    position: fixed;
+    top: 50px;
+    padding: 10px;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-family: "Barriecito", system-ui;
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+    .cursor {
+      position: fixed;
+      width: 45vh;
+      height: 45vh;
+      background: black;
+      border-radius: 50%;
+      pointer-events: none;
+      mix-blend-mode: exclusion;
+      transform: translate(-50%, -50%);
+      transition: transform 0.1s ease; filter 0.3s ease;
+      filter: blur(7.5px);
+      z-index:2;
+    }
+
+  a{
+    text-decoration: none;
+    font-family: "Barriecito", system-ui;
+    color:black;
+    position:fixed;
+    font-size:15vw;
+    display:flex;
+    top:110px;
+    text-align: left;
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    padding:none;
+  }
+
+    *:hover .cursor {
+      background: white;
+    }
+
+    a:hover{
+        filter: blur(4px);
+        z-index:1;
+    }
+}

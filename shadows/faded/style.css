@@ -1,0 +1,72 @@
+    @import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+    body {
+      margin: 0;
+      overflow: hidden;
+      transition: background-color 1s ease; /* Add a smooth transition effect */
+    }
+
+    .nav-button {
+      text-decoration: none;
+      position: fixed;
+      top: 10px;
+      padding: 10px;
+      background-color: transparent;
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      z-index: 9999;
+    }
+
+    .nav-button.mid {
+      font-size:75px;
+    }
+
+    .content {
+      font-family: "Nunito", sans-serif;
+      position: relative;
+      z-index: 2;
+      padding: 20px;
+    }
+
+    .p1{
+      max-width:45vw;
+      color:white;
+    }
+
+    .p2{
+      max-width:45vw;
+      text-align: center;
+      color:white;
+    }
+
+    .p3{
+      text-align:right;
+      float:right;
+      max-width:45vw;
+      color:white;
+    }
+
+    .p4{
+      text-align:right;
+      float:right;
+      max-width:45vw;
+      color:black;
+    }
+
+    .p5{
+      position:fixed;
+      max-width:45vw;
+      text-align: left;
+      color:black;
+    }
+
+    .p6{
+      position:fixed;
+      text-align:right;
+      max-width:45vw;
+      color:black;
+      left:50vw;
+    }
