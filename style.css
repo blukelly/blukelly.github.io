@@ -5,19 +5,25 @@ body{
   background-size: cover; 
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position:center;
   font-family: "Micro 5", sans-serif;
   text-align:center;
+  margin:120px;
 }
 
 
 h1 {
-    font-size: 125px;
-    color:#f1efd3;
+    font-size: clamp(55px, 10vw ,125px);
+    margin: 20px 0 0 20px;
+    color:#6b8f87;
+    justify-content:center;
 }
 
 h2 {
-    font-size: 50px;
-    color:#ccd4ae;
+    font-size: clamp(5px, 10vw ,50px);
+    margin: 20px 0 0 20px;
+    color:#6b8f87;
+    justify-content: center;
 }
 
 a{
