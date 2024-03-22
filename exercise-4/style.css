@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Mirza:wght@400;500;600;700&display=swap');
+
+body {
+    background-color:rgb(52, 103, 235);
+    margin: 120px;
+    text-align:center;
+}
+
+#title{
+    color:rgb(243,243,242);
+    margin:10;
+}
+
+h1 {
+   font-family: "Glass Antiqua", cursive;
+   font-size: 7vh;
+   justify-content: center;
+}
+
+h2 {
+    font-family: "Glass Antiqua", cursive;
+    text-align: center;
+    font-size: 4vh;
+    display: flex;
+    justify-content: center;
+}
+
+#poem {
+    font-family: "Mirza", serif;
+    display: inline-block;
+    text-align: left;
+    font-size: 22px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+#poem span{
+    color:rgb(243,243,242);
+    
+}
