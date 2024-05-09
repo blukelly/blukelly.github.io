@@ -4,7 +4,7 @@ const eyelids = document.querySelectorAll('.eyelid');
 // Function to close all eyes (shut all eyelids)
 function closeAllEyes() {
     eyelids.forEach(eyelid => {
-        eyelid.style.height = '150px'; // Close the eye (cover the entire eye)
+        eyelid.style.height = '100px'; // Close the eye (cover the entire eye)
     });
 }
 
