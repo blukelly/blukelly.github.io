@@ -50,7 +50,7 @@ body {
 #rotating-image2 {
     width: 150px; /* Width of the image */
     height: 150px; /* Height of the image */
-    background-image: url('Images/Pupil1.png'); /* Specify the image path */
+    background-image: url('images/Pupil1.png'); /* Specify the image path */
     background-size: cover; /* Ensure the image covers the entire element */
     background-position: center; /* Center the image */
     position: absolute;
@@ -66,7 +66,7 @@ body {
 #smaller-rotating-image2 {
     width: 150px; /* Width of the smaller image */
     height: 150px; /* Height of the smaller image */
-    background-image: url('Images/Pupil2.png'); /* Specify the image path */
+    background-image: url('images/Pupil2.png'); /* Specify the image path */
     background-size: cover; /* Ensure the image covers the entire element */
     background-position: center; /* Center the image */
     position: absolute;
