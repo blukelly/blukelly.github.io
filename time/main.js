@@ -4,14 +4,14 @@ const eyelids = document.querySelectorAll('.eyelid');
 // Function to close all eyes (shut all eyelids)
 function closeAllEyes() {
     eyelids.forEach(eyelid => {
-        eyelid.style.height = '100px'; // Close the eye (cover the entire eye)
+        eyelid.style.height = '300px'; // Close the eye (cover the entire eye)
     });
 }
 
 // Function to open all eyes (lift all eyelids)
 function openAllEyes() {
     eyelids.forEach(eyelid => {
-        eyelid.style.height = '0'; // Open the eye (hide the eyelid)
+        eyelid.style.height = '75'; // Open the eye (hide the eyelid)
     });
 }
 
