@@ -1,0 +1,99 @@
+/* CSS styles for blinking eye */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #db3737;
+    flex-direction: row; /* Display clock containers side by side */
+}
+
+/* Styles for the clock container */
+.clock-container {
+    position: relative;
+    width: 300px; /* Diameter of the clock */
+    height: 300px;
+    border-radius: 150px 150px 0 0;
+    margin: 150px ;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add drop shadow */
+}
+
+/* Styles for the moving shapes container */
+.moving-shapes-container {
+    position: absolute;
+    width: 50px; /* Width of the larger rotating shape */
+    height: 50px; /* Height of the larger rotating shape */
+    top: 0;
+    left: 0;
+    /* Add transition for smooth movement */
+    transition: left 0.5s linear, top 0.5s linear;
+}
+
+/* Eyelid */
+.eyelid {
+    width: 300px;
+    height: 150px;
+    background-color: #a81d2b;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 150px 150px 0 0;
+    /* Add transition for smooth animation */
+    transition: height 0.5s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add drop shadow */
+}
+
+/* Define the original rotating image */
+#rotating-image,
+#rotating-image2 {
+    width: 150px; /* Width of the image */
+    height: 150px; /* Height of the image */
+    background-image: url('Images/Pupil1.png'); /* Specify the image path */
+    background-size: cover; /* Ensure the image covers the entire element */
+    background-position: center; /* Center the image */
+    position: absolute;
+    top: 50%; /* Center the image vertically in the container */
+    left: 50%; /* Center the image horizontally in the container */
+    transform: translate(-50%, -50%);
+    /* Define the rotation animation with a duration of 60 seconds */
+    animation: rotateImage 1s linear infinite;
+}
+
+/* Define the smaller rotating image */
+#smaller-rotating-image,
+#smaller-rotating-image2 {
+    width: 150px; /* Width of the smaller image */
+    height: 150px; /* Height of the smaller image */
+    background-image: url('Images/Pupil2.png'); /* Specify the image path */
+    background-size: cover; /* Ensure the image covers the entire element */
+    background-position: center; /* Center the image */
+    position: absolute;
+    top: 50%; /* Center the smaller image vertically in the larger rotating image */
+    left: 50%; /* Center the smaller image horizontally in the larger rotating image */
+    transform: translate(-50%, -50%);
+    /* Define the opposite rotation animation */
+    animation: rotateImageOpposite 60s linear infinite;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+}
+
+/* Keyframes for the original rotating image */
+@keyframes rotateImage {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Keyframes for the smaller rotating image rotation in the opposite direction */
+@keyframes rotateImageOpposite {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
+}
