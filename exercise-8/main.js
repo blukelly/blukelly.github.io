@@ -38,4 +38,11 @@ timeElem.innerHTML = thisHour + ":" + thisMinute + ":" + thisSecond;
   
 }
 
+function changeBackgroundColor() {
+  const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+  document.body.style.backgroundColor = randomColor;
+}
+
 setInterval(updateTime, 1000);
+setInterval(changeBackgroundColor, 1000);
+

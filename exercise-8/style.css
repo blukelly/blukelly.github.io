@@ -1,6 +1,27 @@
 body {
-  font-size: 48px;
-  letter-spacing: -0.03em;
-  transition: 0.3s;
-  text-align:center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Initial background color */
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 8em;
+  text-shadow: 2px 2px black;
+}
+
+h2{
+  font-size: 2em;
+  text-shadow: 2px 2px black;
+}
+
+h1, h2{
+  color:white;
 }
