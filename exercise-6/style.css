@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 100px;
+    gap: 0.5rem;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
